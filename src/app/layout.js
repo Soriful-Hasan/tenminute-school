@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Features from "./components/features/Features";
 import GroupEngagement from "./components/groupEngagement/GroupEngagement";
 import Instructors from "./components/instructors/Instructors";
+import Pointers from "./components/pointers/Pointers";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,6 +35,7 @@ export default function RootLayout({ children }) {
           <Instructors />
           <Features />
           <GroupEngagement />
+          <Pointers></Pointers>
         </main>
         {children}
         <Footer />
