@@ -3,7 +3,9 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import { ThemeProvider } from "next-themes";
+import Features from "./components/features/Features";
+import GroupEngagement from "./components/groupEngagement/GroupEngagement";
+import Instructors from "./components/instructors/Instructors";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,13 +26,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
         <Navbar />
-        <Header />
-        <ThemeProvider attribute="class" defaultTheme="light">
-          {children}
-        </ThemeProvider>
+        <main className="max-w-8/12 mx-auto mt-10 space-y-10">
+          <Header />
+          <Instructors />
+          <Features />
+          <GroupEngagement />
+        </main>
+        {children}
         <Footer />
       </body>
     </html>

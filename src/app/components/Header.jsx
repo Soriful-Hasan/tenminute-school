@@ -3,12 +3,16 @@ import React from "react";
 
 export default async function Header() {
   const data = await getData();
-  const heading = data.data;
+  const course = data.data;
 
   return (
-    <div>
-      <div className="">{heading.title}</div>
-      <div className="">{heading.description}</div>
+    <div className="border p-10 ">
+      <div className="">{course.title}</div>
+      <div
+        className="prose dark:prose-invert max-w-none"
+        dangerouslySetInnerHTML={{ __html: course.description }}
+      />
+      <p>{course.instructors}</p>
     </div>
   );
 }
