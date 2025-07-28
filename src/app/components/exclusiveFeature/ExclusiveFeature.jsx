@@ -10,7 +10,7 @@ export default async function ExclusiveFeature() {
   );
   const exclusiveFeatureValue = exclusiveFeatures?.values || [];
   return (
-    <div>
+    <div className="">
       <h1 className="text-xl font-semibold mb-4 ">Course Exclusive Feature</h1>
       <div className="border rounded-md space-y-4 p-2  border-gray-200">
         {exclusiveFeatureValue.map((exclusive, index) => (
@@ -23,7 +23,7 @@ export default async function ExclusiveFeature() {
             }`}
           >
             <h1 className="font-semibold text-gray-500">{exclusive.title}</h1>
-            <div className="flex gap-4 justify-between p-2 ">
+            <div className="flex flex-col lg:flex-row gap-4 justify-between p-2 ">
               <div className="space-y-4 ">
                 {exclusive.checklist.map((check, index) => (
                   <div key={index} className="flex gap-2">

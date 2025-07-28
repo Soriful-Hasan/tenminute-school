@@ -34,11 +34,11 @@ export default function RootLayout({ children }) {
       >
         <Navbar />
         <main className="">
-          <div className="relative border">
+          <div className="text-white relative  bg-gradient-to-r from-[#030917] to-[#102759]">
             <Header />
           </div>
-          <div className="max-w-8/12  grid grid-cols-12 gap-4 mx-auto mt-10 space-y-10">
-            <aside className="col-span-8 p-4 space-y-10">
+          <div className=" xl:max-w-7/12  lg:grid lg:grid-cols-12 gap-4 mx-auto mt-10 space-y-10">
+            <aside className="lg:col-span-8  p-4 space-y-10">
               <Instructors />
               <Features />
               <GroupEngagement />
@@ -46,7 +46,7 @@ export default function RootLayout({ children }) {
               <ExclusiveFeature />
               <CourseDetails></CourseDetails>
             </aside>
-            <aside className="col-span-4 p-4 ">
+            <aside className="lg:col-span-4 xl:ml-30 2xl:ml-0  p-4 hidden xl:block">
               <div className=" absolute top-10 ">
                 <Sidebar />
               </div>

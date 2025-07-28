@@ -13,11 +13,11 @@ const Instructors = async () => {
 
   return (
     <div>
-      <h1 className=" text-4xl">{instructorSection.name}</h1>
+      <h1 className="text-xl font-semibold">{instructorSection.name}</h1>
       <div className="mt-5">
         {instructors?.map((instructor, index) => (
           <div key={index}>
-            <div className="flex border p-8 rounded-lg ">
+            <div className="flex p-6 gap-6 border border-gray-200 items-center rounded-lg ">
               <div className="">
                 <img
                   className="rounded-full"
@@ -26,11 +26,12 @@ const Instructors = async () => {
                   alt=""
                 />
               </div>
-              <div className="ml-10">
+              <div className="">
                 <h1 className="text-xl">{instructor.name}</h1>
-                <p>MSc (English), University of Oxford (UK)</p>
-                <p>BA, MA (English), University of Dhaka</p>
-                <p>IELTS: 8.5</p>
+                <div
+                  className=" prose dark:prose-invert max-w-100  text-gray-600"
+                  dangerouslySetInnerHTML={{ __html: instructor.description }}
+                />
               </div>
             </div>
           </div>

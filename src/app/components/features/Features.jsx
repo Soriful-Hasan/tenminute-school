@@ -11,15 +11,20 @@ export default async function Features() {
 
   return (
     <div>
-      <h1 className="text-3xl">{features.name}</h1>
-      <div className="grid grid-cols-4 p-4 gap-4 border mt-6 rounded-sm">
+      <h1 className="text-xl font-bold">{features.name}</h1>
+      <div
+        style={{
+          backgroundColor: "#111827",
+        }}
+        className="grid grid-cols-1 p-4 gap-4 border mt-6 rounded-sm"
+      >
         {featureValue?.map((feature, index) => (
           <div key={index} className="">
-            <div className="">
+            <div className="flex gap-2 items-center">
               <img src={feature.icon} alt="" />
+              <div className="font-bold  text-white">{feature.title}</div>
             </div>
-            <div className="">{feature.subtitle}</div>
-            <div className="">{feature.title}</div>
+            <div className="text-white text-sm mt-4">{feature.subtitle}</div>
           </div>
         ))}
       </div>
