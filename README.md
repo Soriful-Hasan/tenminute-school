@@ -1,34 +1,32 @@
-# 🎯 IELTS Course Page Clone (10 Minute School Style)
+# 📘 IELTS Course Page Clone (Inspired by 10 Minute School)
 
-This project is a frontend clone of the IELTS course product page from [10 Minute School](https://10minuteschool.com/product/ielts-course/). Built using **Next.js**, **TypeScript**, and **TailwindCSS**, this application displays dynamic content like videos, thumbnails, and mobile-friendly layout.
+This is a responsive frontend project built with **Next.js** and **TailwindCSS**. It replicates the layout and features of the IELTS Course page from [10 Minute School](https://10minuteschool.com/product/ielts-course/).
 
 ---
 
 ## 🚀 Live Demo
 
-🔗 [View Live on Vercel]([https://your-vercel-link.vercel.app](https://tenminute-school.vercel.app/))
+🔗 [View Live on Vercel](https://tenminute-school.vercel.app/)
 
 ---
 
 ## 📌 Features
 
-- ✅ Fully responsive design (mobile, tablet, desktop)
-- ✅ Video preview section (loaded dynamically from API)
-- ✅ Thumbnail integration
-- ✅ Modern UI with TailwindCSS
-- ✅ SEO-friendly Head tags
-- ✅ Component-based code structure
+- Fully responsive layout
+- Course overview with thumbnail previews
+- Modern UI with TailwindCSS
+- Clean code structure and reusable components
+- SEO optimized (Head tags)
+- Deployed via Vercel
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Tech           | Description                    |
-|----------------|--------------------------------|
-| Next.js        | React Framework for SSR & Routing |
-
-| TailwindCSS    | Utility-first CSS framework     |
-
+| Tech        | Description                          |
+|-------------|--------------------------------------|
+| Next.js     | React framework with file-based routing and SSR |
+| TailwindCSS | Utility-first CSS framework for rapid UI design |
 
 ---
 
