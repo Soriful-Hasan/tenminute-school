@@ -19,8 +19,8 @@ export default async function Pointers() {
       </h1>
 
       <div className="space-y-4 mt-4 grid grid-cols-1 lg:grid-cols-2 gap-4">
-        {pointersValue.map((value) => (
-          <div className="flex items-center gap-4">
+        {pointersValue.map((value,index) => (
+          <div key={index} className="flex items-center gap-4">
             <FaCheck className="shrink-0 w-10 h-5" color="#6294F8" />
             <h1 className="text-lg text-gray-500">{value.text}</h1>
           </div>
