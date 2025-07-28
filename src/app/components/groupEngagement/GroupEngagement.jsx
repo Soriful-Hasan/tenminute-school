@@ -28,12 +28,12 @@ export default async function GroupEngagement() {
               <p className="text-sm text-gray-300 font-semibold">
                 {engagement.description}
               </p>
-              <button className="font-bold text-white cursor-pointer bg-[#15803D]  py-4 px-3 rounded-md">
+              <button className="font-bold text-white cursor-pointer bg-[#25964e]  py-4 px-3 rounded-md">
                 ফ্রি PDF DOWNLOAD করুন
               </button>
             </div>
             <div className="flex-1">
-              <div className="w-full  lg:w-90">
+              <div className="w-full  lg:w-80">
                 <img src={engagement.thumbnail} alt="" />
               </div>
             </div>

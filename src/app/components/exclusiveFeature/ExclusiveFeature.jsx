@@ -32,7 +32,8 @@ export default async function ExclusiveFeature() {
                   </div>
                 ))}
               </div>
-              <div className="w-50">
+              <div className="w-50 ">
+                
                 <img src={exclusive.file_url} alt={exclusive.file_type} />
               </div>
             </div>

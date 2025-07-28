@@ -59,13 +59,13 @@ export default function Sidebar() {
       <div className="">
         <div className="p-4 space-y-4">
           <div className="flex items-center gap-3">
-            <h1 className="font-semibold text-xl ">1000 Taka</h1>
+            <h1 className="font-semibold text-xl ">৳3850</h1>
             <h1 className="text-decoration: line-through  font-semibold ">
-              3000 Taka
+              ৳5000
             </h1>
           </div>
           <div className="">
-            <button className=" w-full  font-bold cursor-pointer text-white bg-[#15803D]  py-4 px-3 rounded-md">
+            <button className=" w-full  font-bold cursor-pointer text-white bg-[#25964e]   py-4 px-3 rounded-md">
               Enroll
             </button>
           </div>
