@@ -11,14 +11,12 @@ export default async function Pointers() {
   return (
     <div>
       <h1 className="text-3xl">{pointers.name}</h1>
-      <div className=" gap-4 border p-4 mt-6">
-        {pointersValue.map((pointer) => (
-          <div>
+
+      <div className=" border  rounded-md space-y-4 p-2  border-gray-200 ">
+        {pointersValue.map((pointer, index) => (
+          <div key={index}>
             <div className="">
-              <img src={pointer.icon} alt="" />
-            </div>
-            <div className="">
-              <h3>{pointer.text}</h3>
+              <h3 className="">{pointer.text}</h3>
             </div>
             <div className=""></div>
           </div>

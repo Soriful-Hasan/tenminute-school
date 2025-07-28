@@ -8,11 +8,10 @@ export default async function GroupEngagement() {
     (section) => section.type === "group_join_engagement"
   );
   const engagementsValue = engagements?.values || [];
-  console.log(engagementsValue);
   return (
     <div>
-      {engagementsValue?.map((engagement) => (
-        <div>
+      {engagementsValue?.map((engagement, index) => (
+        <div key={index}>
           <div
             className="rounded-lg bg-cover bg-center  w-full flex items-center justify-center"
             style={{

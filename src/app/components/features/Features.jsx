@@ -13,8 +13,8 @@ export default async function Features() {
     <div>
       <h1 className="text-3xl">{features.name}</h1>
       <div className="grid grid-cols-4 p-4 gap-4 border mt-6 rounded-sm">
-        {featureValue?.map((feature) => (
-            <div className="">
+        {featureValue?.map((feature, index) => (
+          <div key={index} className="">
             <div className="">
               <img src={feature.icon} alt="" />
             </div>

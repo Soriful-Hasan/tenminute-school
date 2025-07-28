@@ -7,6 +7,9 @@ import Features from "./components/features/Features";
 import GroupEngagement from "./components/groupEngagement/GroupEngagement";
 import Instructors from "./components/instructors/Instructors";
 import Pointers from "./components/pointers/Pointers";
+import ExclusiveFeature from "./components/exclusiveFeature/ExclusiveFeature";
+import CourseDetails from "./components/courseDetails/CourseDetails";
+import Sidebar from "./components/sidebar/Sidebar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,15 +30,28 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Navbar />
-        <main className="max-w-8/12 mx-auto mt-10 space-y-10">
-          <Header />
-          <Instructors />
-          <Features />
-          <GroupEngagement />
-          <Pointers></Pointers>
+        <main className="">
+          <div className="relative border">
+            <Header />
+          </div>
+          <div className="max-w-8/12  grid grid-cols-12 gap-4 mx-auto mt-10 space-y-10">
+            <aside className="col-span-8 p-4 space-y-10">
+              <Instructors />
+              <Features />
+              <GroupEngagement />
+              <Pointers></Pointers>
+              <ExclusiveFeature />
+              <CourseDetails></CourseDetails>
+            </aside>
+            <aside className="col-span-4 p-4 ">
+              <div className=" absolute top-10 ">
+                <Sidebar />
+              </div>
+            </aside>
+          </div>
         </main>
         {children}
         <Footer />
